@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+div {
+width: 110px;
+height: 110px;
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+ <div id="screen-log"></div>   
+</body>
+<center>
+<br>
+<p> Sample Example for mousemove in JavaScript. </p>
+<div onmousemove = "samFunct(event)" onmouseout = "clearCoo()"></div>
+<p id="demo"></p>
+<script>
+function samFunct(el) {
+var x = el.clientX;
+var y = el.clientY;
+var coo = "Coordinates are: (" + x + "," + y + ")";
+document.getElementById("demo").innerHTML = coo;
+}
+function clearCoo() {
+document.getElementById("demo").innerHTML = "Keep mouse pointer within";
+}
+</script>
+</html>
