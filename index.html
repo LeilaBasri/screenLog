@@ -14,16 +14,5 @@
 <div onmousemove = "samFunct(event)" onmouseout = "clearCoo()"></div>
 <p id="demo"></p>   
 </body>
-
-<script>
-function samFunct(el) {
-var x = el.clientX;
-var y = el.clientY;
-var coo = "Coordinates are: (" + x + "," + y + ")";
-document.getElementById("demo").innerHTML = coo;
-}
-function clearCoo() {
-document.getElementById("demo").innerHTML = "Keep mouse pointer within";
-}
-</script>
+<script src='main.js' type="text/javascript"></script>
 </html>
